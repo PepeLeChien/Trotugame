@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Juego de la Tortuga</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>El Juego de la Tortuga</h1>
+        <div class="tortuga__imagen">
+            <div class="tortuga--cabeza">
+                <div class="tortuga--ojo"></div>
+                <div class="tortuga--ojo"></div>
+            </div>
+            <div class="tortuga--pata pata1"></div>
+            <div class="tortuga--pata pata2"></div>
+            <div class="tortuga--pata pata3"></div>
+            <div class="tortuga--pata pata4"></div>
+            <div class="tortuga--caparazon"></div>
+        </div>
+    </header>
+    <main>
+        <section class="pintura">
+            <h2 id="racha">Trotugame</h2>
+            <div class="tortuga__juego">
+                <div class="juego--cabeza" id="cabeza">
+                    <div class="juego--ojo"></div>
+                    <div class="juego--ojo"></div>
+                </div>
+                <div class="juego--pata patita1" id="pata1"></div>
+                <div class="juego--pata patita2" id="pata2"></div>
+                <div class="juego--pata patita3" id="pata3"></div>
+                <div class="juego--pata patita4" id="pata4"></div>
+                <div class="juego--caparazon" id="caparazon"></div>
+        </section>
+        <section class="interaccion">
+            <p>Vidas: <span id="vidas">5</span></p>
+            <div>
+                <button type="button" class="btn-dado" onclick="tirarDado()" id="btn-dado">Lanzar el dado</button>
+                <img src="./images/dado.gif" id="dado" alt="dado">
+            </div>
+            <div>
+                <button class="btn-reiniciar" onclick="reiniciarJuego()">Reiniciar juego</button>
+            </div>
+        </section>
+        <section class="reglas">
+            <div class="reglas__card">
+                <h2>Reglas:</h2>
+                <p>-Cada número del dado representa una pieza de la tortuga.</p>
+                <p>-Si el dado muestra un número ya pintado, se despintará la pieza y perderás una vida.</p>
+                <p>-En caso de que el dado muestre un número recién pintado, la pieza se bloqueará y no perderás vidas en ese número.</p>
+                <p>-Pinta todas las piezas de la tortuga para ganar el juego.</p>    
+            </div>
+
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

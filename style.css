@@ -1,0 +1,301 @@
+* {
+    --green-turtle: #85E113;
+    --brown-turtle: #975c1a;
+    --green-block: #0d961a;
+    --brown-block: #6b3d09;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 7rem;
+    color: #fff;
+    background-color: #62b7f8;
+}
+
+.tortuga__imagen {
+    position: relative;
+    width: 10rem;
+    height: 80%;
+}
+
+.tortuga--cabeza {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    border: solid 1px var(--green-turtle);
+    background-color: var(--green-turtle);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tortuga--ojo {
+    border: solid 1px black;
+    background-color: black;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    margin-right: 10%;
+}
+
+.tortuga--pata {
+    position: absolute;
+    border: solid 1px var(--green-turtle);
+    background-color: var(--green-turtle);
+    width: 2.4rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.pata1 {
+    top: 0;
+    left: 10%;
+}
+.pata2 {
+    top: 0;
+    left: 40%;
+}
+.pata3 {
+    bottom: 0;
+    left: 10%;
+}
+.pata4 {
+    bottom: 0;
+    left: 40%;
+}
+
+.tortuga--caparazon {
+    position: absolute;
+    border: solid 1px var(--brown-turtle);
+    background-color: var(--brown-turtle);
+    width: 65%;
+    height: 70%;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.pintura {
+    width: 50%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pintura h2{
+    text-align: center;
+    margin-top: 1rem
+}
+
+.tortuga__juego {
+    position: relative;
+    min-width: 11rem;
+    width: 16rem;
+    height: 20rem;
+    margin-top: 10px;
+}
+
+.juego--cabeza {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid 2px var(--green-turtle);
+    /*background-color: var(--green-turtle);*/
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.juego--ojo {
+    border: solid 1px black;
+    background-color: black;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 100%;
+    margin-top: .3rem;
+}
+
+.juego--pata {
+    position: absolute;
+    border: solid 2px var(--green-turtle);
+    /*background-color: var(--green-turtle);*/
+    width: 5rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+.patita1 {
+    top: 30%;
+    left: 0;
+}
+.patita2 {
+    top: 70%;
+    left: 0;
+}
+.patita3 {
+    right: 0;
+    top: 30%;
+}
+.patita4 {
+    right: 0;
+    top: 70%;
+}
+
+.juego--caparazon {
+    position: absolute;
+    border: solid 2px var(--brown-turtle);
+    /*background-color: var(--brown-turtle);*/
+    width: 65%;
+    height: 70%;
+    border-radius: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.interaccion {
+    width: 50%;
+    border-left: 2px rgb(66, 63, 63) dashed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.interaccion p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.interaccion div {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.interaccion button {
+    width: 7rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.interaccion img {
+    width: 5rem;
+    height: 5rem;
+}
+
+button {
+    border-radius: 10%;
+    border: 2px solid rgb(97, 97, 97);
+    background-color: #a5d3f7;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+
+
+.reglas {
+    display: flex;
+    background-color: #d1b18d;
+    padding-bottom: 4rem;
+}
+
+.reglas h2 {
+    font-size: 1.6rem;
+}
+
+.reglas p {
+    font-size: 1.4rem;
+}
+.reglas__card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#racha {
+    display: block;
+    height: 6rem;
+    font-size: 2rem;
+}
+
+
+@media (min-width: 700px){
+    .pintura {
+        width: 30%;
+    }
+    .interaccion {
+        width: 30%;
+        height: calc(100vh - 7rem);
+    }
+    .reglas {
+        width: 40%;
+        height: auto;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        background-color: #fff;
+        padding-bottom: 0;
+
+    }
+    .reglas__card {
+        max-width: 90%;
+        width: 30rem;
+        background-color: #d1b18d;
+        padding: 2rem;
+        border-radius: 15% 0 0 15%;
+        border: 3px solid #724f27;
+        border-right: none;
+    }
+    button:hover {
+        border: 2px solid var(--green-block);
+        transition: 0.2s;
+        transform: scale(1.1);
+    }
+
+}
