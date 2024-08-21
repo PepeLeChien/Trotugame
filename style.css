@@ -15,6 +15,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #d1b18d;
 }
 
 header {
@@ -103,6 +104,7 @@ main {
     flex-wrap: wrap;
     min-height: 50vh;
     width: 100%;
+    background-color: #fff;
 }
 
 .pintura {
@@ -239,6 +241,7 @@ button:active {
 
 
 .reglas {
+    width: 100%;
     display: flex;
     background-color: #d1b18d;
     padding-bottom: 4rem;
@@ -265,7 +268,10 @@ button:active {
 }
 
 
-@media (min-width: 700px){
+@media (min-width: 850px){
+    html {
+        font-size: 93.75%;
+    }
     .pintura {
         width: 30%;
     }
@@ -288,7 +294,7 @@ button:active {
         width: 30rem;
         background-color: #d1b18d;
         padding: 2rem;
-        border-radius: 15% 0 0 15%;
+        border-radius: 60px 0 0 60px;
         border: 3px solid #724f27;
         border-right: none;
     }
